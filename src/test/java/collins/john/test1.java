@@ -1,77 +1,47 @@
 package collins.john;
 
+import org.junit.Test;
+
+import java.util.ArrayList;
+
 /**
  * Created by johncollins on 1/20/17.
  */
-/*
+
 public class test1 {
+            ArrayList<Account> TestBank = new ArrayList<Account>();
 
+            /*for(int i = 0; i < 100; i++)
 
-
-
-
-
-    @Test
-    public void ViewAccountTest() {
-
-                String viewAccountNumber = Integer.toString(10);
-                String viewBalance = Double.toString(22.22);
-                String viewRate = Double.toString(13.13);
-                String viewODP = Boolean.toString(true);
-                String viewName = "john a";
-                String viewType = "checking";
-                System.out.println(viewAccountNumber + "," + viewName + "," + viewType + "," + viewBalance +"," + viewODP + "," + viewRate);
+            {
+                Account testAccount = new Account();
+             TestBank.add(testAccount);
             }
-        }
 
+            int n;
 
-    /*
-    public void ViewAccount(int n) {
-        for (Account i : Bank
-                ) {
-            if (n == currentBankAccount.getAccountNumber()) {
-                String viewAccountNumber = Integer.toString(currentBankAccount.getAccountNumber());
-                String viewBalance = Double.toString(currentBankAccount.getBalance());
-                String viewRate = Double.toString(currentBankAccount.getInterestRate());
-                String viewODP = Boolean.toString(currentBankAccount.getOverdraftPrevention());
-                String viewName = currentBankAccount.getName();
-                String viewType = currentBankAccount.getType();
-                System.out.println(viewAccountNumber + "," + viewName + "," + viewType + "," + viewBalance +"," + viewODP + "," + viewRate);
-            }
-        }
-    }
-
-
-@Before
-String ac = Integer.toString(currentBankAccount.getAccountNumber());
-    String viewBalance = Double.toString(currentBankAccount.getBalance());
-    String viewRate = Double.toString(currentBankAccount.getInterestRate());
-    String viewODP = Boolean.toString(currentBankAccount.getOverdraftPrevention());
-    String viewName = currentBankAccount.getName();
-    String viewType = currentBankAccount.getType();
-    String viewStatus = currentBankAccount.getStatus();
-
-
-
-//Test
-    public void ViewAccount() {
-        Scanner askAccountNumber = new Scanner(System.in);
-        System.out.println("To view an account, enter the account number.");
-        int n = askAccountNumber.nextInt();
-        for (Account i : Bank
-                ) {
-            if (n == currentBankAccount.getAccountNumber()) {
-                String viewAccountNumber = Integer.toString(currentBankAccount.getAccountNumber());
-                String viewBalance = Double.toString(currentBankAccount.getBalance());
-                String viewRate = Double.toString(currentBankAccount.getInterestRate());
-                String viewODP = Boolean.toString(currentBankAccount.getOverdraftPrevention());
-                String viewName = currentBankAccount.getName();
-                String viewType = currentBankAccount.getType();
-                String viewStatus = currentBankAccount.getStatus();
-                System.out.println(viewAccountNumber + "," + viewName + "," + viewType + "," + viewStatus + "," + viewBalance + "," + viewODP + "," + viewRate);
-
-            }
-        }
-    }//end ViewAccount
-}//end of this whole class
+            for(int k = 0; k < 100; k++){
+                int n = k;}
 */
+ int n = 56;
+    @Test
+    public void getAccountTest(){
+        for (Account i :TestBank
+                ) {
+            if (n == i.getAccountNumber()) {
+                String viewAccountNumber = Integer.toString(i.getAccountNumber());
+                String viewBalance = Double.toString(i.getBalance());
+                String viewRate = Double.toString(i.getInterestRate());
+                String viewODP = Boolean.toString(i.getOverdraftPrevention());
+                String viewName = i.getName();
+                String viewType = i.getType();
+                String viewStatus = i.getStatus();
+                String viewRecord = i.getRecord();
+                //System.out.println(viewAccountNumber+","+viewName+","+viewType+","+viewStatus+","+viewBalance+","+viewODP+","+viewRate+","+viewRecord);
+
+            }
+        }
+    }//end ViewAccount Test
+}
+
+

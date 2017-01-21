@@ -15,8 +15,8 @@ public class main {
 
         //bank[0].getAccountNumber;
         //for(Object bankAccount:Bank){0.();}
-      accountManager.viewAllAccounts();
-accountManager.
+        accountManager.viewAllAccounts();
+        accountManager.viewAccountByNumber();
 
 
 

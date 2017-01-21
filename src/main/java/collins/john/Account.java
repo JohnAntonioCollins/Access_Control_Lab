@@ -15,6 +15,13 @@ public class Account {
     //private ArrayList record;
     private String record;
 
+    public Account(){
+         this.accountNumber+=1;
+
+
+
+    }
+
     public Account(String type, int accountNumber, Double balance, String name, Double rate, String status, boolean odp, String record) {
         this.type = type;
         this.accountNumber = accountNumber;
@@ -67,10 +74,10 @@ public class Account {
 
     public Double getBalance() {
 
-        if(type != String "ofac"){
+        if(this.type != "ofac"){
             return balance;
         }
-        else{return;}
+        else{return 9999999.9999999;}
     }
 
     public String getName() {return name;}
