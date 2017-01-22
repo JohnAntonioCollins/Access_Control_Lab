@@ -87,51 +87,39 @@ public class AccountManager {
 
     //System.out.println(bankAccount.getName());
 
-
-
-
 return;
 
         }//end OpenAccount
 
-public void viewAccountByNumber(){
+public String viewAccountByNumber(){
     Scanner selectedAccountNumber = new Scanner(System.in);
     System.out.println("To view an account, enter the account number.");
     int g = selectedAccountNumber.nextInt();
-    //return n;
-    this.getAccount(g);
+    Account p = this.getAccount(g);
+    return p.viewAccount();
 }//end select account number
 
 
 
- public void getAccount(int n){
-        //Scanner askAccountNumber = new Scanner(System.in);
-     //System.out.println("To view an account, enter the account number.");
-     //int n = askAccountNumber.nextInt();
-     for (Account i :Bank
+ public Account getAccount(int n){
+    Account z;
+     for (Account  i :Bank
           ) {
-         //System.out.println(i.getAccountNumber());
          if (n == i.getAccountNumber()) {
-            String viewAccountNumber = Integer.toString(i.getAccountNumber());
-            String viewBalance = Double.toString(i.getBalance());
-            String viewRate = Double.toString(i.getInterestRate());
-            String viewODP = Boolean.toString(i.getOverdraftPrevention());
-            String viewName = i.getName();
-            String viewType = i.getType();
-            String viewStatus = i.getStatus();
-            String viewRecord = i.getRecord();
-            System.out.println(viewAccountNumber+","+viewName+","+viewType+","+viewStatus+","+viewBalance+","+viewODP+","+viewRate+","+viewRecord);
-
+                z = i;
          }
      }
+     return z;
+
  }//end ViewAccount
 
 
-    public void viewAllAccounts(){
+    public void getAllAccounts(){
         for (int i = 0; i < Bank.size()+1; i++) {
             this.getAccount(i);
         }
     }// end View All Accounts
+
 
 
 

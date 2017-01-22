@@ -6,8 +6,7 @@ package collins.john;
 public class main {
     public static void main(String[] args) {
 
-    //Bank bank = new Bank();
-
+        /*
         AccountManager accountManager = new AccountManager();
         accountManager.OpenAccount();
         accountManager.OpenAccount();
@@ -17,7 +16,7 @@ public class main {
         //for(Object bankAccount:Bank){0.();}
         accountManager.viewAllAccounts();
         accountManager.viewAccountByNumber();
-
+        */
 
 
 

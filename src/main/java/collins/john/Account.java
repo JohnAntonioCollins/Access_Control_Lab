@@ -15,12 +15,6 @@ public class Account {
     //private ArrayList record;
     private String record;
 
-    public Account(){
-         this.accountNumber+=1;
-
-
-
-    }
 
     public Account(String type, int accountNumber, Double balance, String name, Double rate, String status, boolean odp, String record) {
         this.type = type;
@@ -32,9 +26,15 @@ public class Account {
         this.record = record;
         this.balance = balance;
 
-    }
 
-        //Setters
+    }//end of public Account first constructor
+
+    public Account(){
+        this.accountNumber = accountNumber;
+    }// end of public Account second connstructor, for testing purposes.
+
+
+    //Setters
 
     //private void setAccountType(final String type) {this.type = type;}
 
@@ -95,6 +95,19 @@ public class Account {
     public String getRecord() {
         return record;
     }
+
+    public String viewAccount(){
+
+        String viewAccountNumber = Integer.toString(this.getAccountNumber());
+        String viewBalance = Double.toString(this.getBalance());
+        String viewRate = Double.toString(this.getInterestRate());
+        String viewODP = Boolean.toString(this.getOverdraftPrevention());
+        String viewName = this.getName();
+        String viewType = this.getType();
+        String viewStatus = this.getStatus();
+        String viewRecord = this.getRecord();
+        return viewAccountNumber+","+viewName+","+viewType+","+viewStatus+","+viewBalance+","+viewODP+","+viewRate+","+viewRecord;
+    }// end of ViewAccount
 
 
 }
